@@ -60,6 +60,13 @@
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.projeto-conhecimentos-u {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
 }
 
 .projeto-texto {
@@ -73,6 +80,7 @@
   flex-wrap: wrap;
   gap: 10px;
   align-content: start;
+  margin-top: 10px;
 }
 
 .projeto-conhecimentos li {
@@ -112,10 +120,21 @@
   .projeto-ano::before {
     content: "Data: ";
   }
+  .projetos-sobre-mim {
+    max-width: none;
+  }
 }
-
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .projetos {
     margin-top: 0px;
+  }
+  .projeto-bloco {
+    grid-template-columns: 1fr;
+  }
+  .projeto-conhecimentos-u {
+    order: -1;
+  }
+  .projeto-conhecimentos {
+    flex-direction: row;
   }
 }
